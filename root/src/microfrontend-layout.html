@@ -1,0 +1,21 @@
+<single-spa-router mode="hash">
+
+  <!-- <nav>
+    <application name="@bacancy/header"></application>
+  </nav> -->
+  <div class="main-content">
+
+    <route path="admin">
+      <application name="@bacancy/admin"></application>
+    </route>
+    <route path="network">
+      <application name="@bacancy/network"></application>
+    </route>
+    <route path="sales">
+      <application name="@bacancy/sales"></application>
+    </route>
+    <!-- <route default>
+      <application name="@bacancy/admin"></application>
+    </route> -->
+  </div>
+</single-spa-router>

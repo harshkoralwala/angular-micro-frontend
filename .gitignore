@@ -1,0 +1,7 @@
+.env.prod.json
+.env.json
+.idea/
+*.code-workspace
+**/.DS_Store
+.npm/
+server/local-serviceaccount.json

@@ -1,0 +1,8 @@
+**/out
+.git
+Dockerfile
+.DS_Store
+.gitignore
+README.md
+.env.*
+server/ormconfig.json
