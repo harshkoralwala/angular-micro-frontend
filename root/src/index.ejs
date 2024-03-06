@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,17 +49,16 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@bacancy/header": "//localhost:4200/main.js",
         "@bacancy/admin": "//localhost:4201/main.js",
         "@bacancy/network": "//localhost:4202/main.js",
-        "@bacancy/sales": "//localhost:4203/main.js",
-        "@bacancy/header": "//localhost:4201/main.js",
+        "@bacancy/sales": "//localhost:4203/main.js",        
         "@bacancy/root-config": "//localhost:9000/bacancy-root-config.js",
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",        
         "single-spa-layout": "https://unpkg.com/single-spa-layout@1.0.0-beta.2/dist/system/single-spa-layout.min.js"
       }
     }
   </script>
-  
   <!-- <% } %> -->
 
   <!--
@@ -69,14 +69,15 @@
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-  <% } else { %>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-  <% } %>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+    <% } else { %>
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+      <% } %>
 
 </head>
+
 <body>
   <noscript>
     You need to enable JavaScript to run this app.
@@ -86,4 +87,5 @@
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
+
 </html>

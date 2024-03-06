@@ -76,6 +76,9 @@
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
+          "options": {
+            "port": 4203
+          },
           "configurations": {
             "production": {
               "browserTarget": "sales:build:production"

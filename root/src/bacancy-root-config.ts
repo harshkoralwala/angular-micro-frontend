@@ -11,6 +11,7 @@ console.log(routes)
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
+    console.log(name)
     return System.import(name);
   },
 });

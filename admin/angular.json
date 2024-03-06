@@ -32,7 +32,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [ ],
+            "scripts": [],
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
               "libraryName": "admin",
@@ -76,6 +76,9 @@
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
+          "options": {
+            "port": 4201
+          },
           "configurations": {
             "production": {
               "browserTarget": "admin:build:production"
@@ -106,7 +109,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [ ]
+            "scripts": []
           }
         }
       }
